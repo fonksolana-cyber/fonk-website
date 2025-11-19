@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FONK — Community Music Token</title>
+  <meta name="description" content="FONK — community token supporting phonk & funk creators through transparent creator-fee rewards." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0b; --card:#111; --muted:#bdb2a7; --accent:#c9a76b;
+      --maxw:960px;
+      font-family:Inter,system-ui,Arial,sans-serif;
+      color:#fff;
+    }
+    body{margin:0;background:#0b0b0b;color:var(--muted);-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:70px;height:70px;border-radius:8px;background:#151515;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:22px;font-weight:700}
+    h1{margin:0;color:#fff;font-size:30px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .card{background:var(--card);padding:20px;border-radius:12px;margin-top:18px;box-shadow:0 4px 14px rgba(0,0,0,.55)}
+    .btn{display:inline-block;background:var(--accent);color:#000;padding:10px 16px;border-radius:8px;text-decoration:none;margin-top:10px;font-weight:600}
+    footer{text-align:center;color:#777;font-size:13px;margin-top:40px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">FONK</div>
+      <div>
+        <h1>FONK</h1>
+        <p class="lead">Turning sound into power. Turning creativity into value.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 style="color:#fff;margin-top:0">About FONK</h2>
+      <p>FONK is created to support phonk and funk creators through a transparent system that uses creator fees as direct rewards. This token turns community support into real value, empowering artists and strengthening the connection between music and its listeners. FONK stands for fairness, recognition, and genuine appreciation.</p>
+    </section>
+
+    <section class="card">
+      <h2 style="color:#fff;margin-top:0">How It Works</h2>
+      <ul>
+        <li>Creator fees are distributed directly to artists as transparent rewards.</li>
+        <li>The community participates in decision-making through token-based involvement.</li>
+        <li>Built to empower creators and unify fans in a fair music ecosystem.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 style="color:#fff;margin-top:0">Join the Community</h2>
+      <p>Stay connected with updates, announcements, and the evolution of the FONK ecosystem.</p>
+      <a class="btn" href="https://twitter.com/" target="_blank">Follow on X</a>
+    </section>
+
+    <footer>
+      © <span id="year"></span> FONK — Community Music Token
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
